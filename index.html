@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class='header'>
+        <h1 class='header__logo'> <a href="/">PRODUCT</a></h1>
+        <input class="header__search" type="text" placeholder="search">
+        <p class="header__text">JONH</p>
+        <img id="backendBtn" class="header__img" src="./img/basket.svg" alt="img">
+    </header>
+
+    <div class="madal" id="madal">
+        <div class="madal__content">
+            <div class="madal__top">
+                <h3 class="madal__title">PRODUCT</h3>
+                <p class="madal__remove" id="madalRemoveAll">Remove all</p>
+            </div>
+            <ul class="madal__list" id="madalList">
+
+            </ul>
+            <button class="madal__btn">checkout</button>
+        </div>
+    </div>
+
+    <div class="madalProduct" id="madalProduct">
+        <div class="madalProduct__content">
+            <div class="madalProduct__close" id="madalProductClose">❌</div>
+            <div class="madalProduct__imgs">
+                <img class="madalProduct__img1" src="https://picsum.photos/64" alt="img">
+                <div class="madalProduct__imgleft">
+                    <img class="madalProduct__img2" src="https://picsum.photos/64" alt="img">
+                    <img class="madalProduct__img3" src="https://picsum.photos/64" alt="img">
+                </div>
+            </div>
+            <div class="madalProduct__wrap">
+                <h2 class='madalProduct__title'>title</h2>
+                <p class="madalProduct__price">price</p>
+                <p class="madalProduct__dicr">dict</p>
+                <div class="madalProduct__div">
+                    <p class="madalProduct__brent">brent</p>
+                    <p class='madalProduct__category'>Categories</p>
+                </div>
+                <div class='madalProduct__btn'>
+                    <button class="madalProduct__btn2" id="addBacked">add to backet</button>
+                    <button id="madalProductClose2">close madal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <nav class="navbar" id="">
+            <h2 class="navbar__title">Categories</h2>
+        </nav>
+        <div class="main__content">
+            <div class="main__content__flex"></div>
+            <div class="page">
+                <div class="page__next">load more</div>
+            </div>
+        </div>
+    </main>
+
+
+    <template id="navbar-template">
+        <p class="navbar__text"></p>
+    </template>
+
+    <template id="backet-template">
+        <div class="backet__item">
+            <img class="backet__img" src="https://picsum.photos/64" alt="img">
+            <div class='backet__cantent'>
+                <h3 class="backet__title">title</h3>
+                <p class="backet__text">text</p>
+            </div>
+            <div class="backet__remove">remove</div>
+        </div>
+    </template>
+    <template id="product-template">
+        <div class="product__item">
+            <img class="product__img" src="https://picsum.photos/64" alt="img">
+            <h3 class="product__title">title</h3>
+            <p class="product__text">text</p>
+            <div class="product__btn">learn more</div>
+        </div>
+    </template>
+</body>
+
+
+<script src="./index.js"></script>
+
+
+</html>
